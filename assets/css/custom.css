@@ -1,0 +1,9 @@
+.navbar-vertical.navbar-expand-xs .navbar-collapse {
+    display: block;
+    overflow: auto;
+    height: auto !important;
+}
+
+.overlay-orange {
+    background-color: rgba(155, 22, 22, 0.678) !important;
+}
