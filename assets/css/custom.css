@@ -7,3 +7,35 @@
 .overlay-orange {
     background-color: rgba(155, 22, 22, 0.678) !important;
 }
+
+.badge-dot {
+    padding-left: 0;
+    padding-right: 0;
+    background: transparent;
+    font-weight: 400;
+    font-size: .875rem;
+    text-transform: none
+}
+
+.badge-dot strong {
+    color: #343a40
+}
+
+.badge-dot i {
+    display: inline-block;
+    vertical-align: middle;
+    width: .375rem;
+    height: .375rem;
+    border-radius: 50%;
+    margin-right: .375rem
+}
+
+.badge-dot.badge-md i {
+    width: .5rem;
+    height: .5rem
+}
+
+.badge-dot.badge-lg i {
+    width: .625rem;
+    height: .625rem
+}
