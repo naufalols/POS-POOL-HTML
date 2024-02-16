@@ -185,7 +185,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="../pages/rtl.html">
+                    <a class="nav-link" href="../pages/rtl.html">
                         <div
                             class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                             <svg class="text-dark" width="16px" height="16px" viewBox="0 0 40 40" version="1.1"
@@ -251,7 +251,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  " href="../pages/rtl.html">
+                    <a class="nav-link active" href="../pages/rtl.html">
                         <div
                             class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                             <svg class="text-dark" width="16px" height="16px" viewBox="0 0 40 40" version="1.1"
@@ -455,9 +455,9 @@
                     <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
                         <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a>
                         </li>
-                        <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Products</li>
+                        <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Purchases</li>
                     </ol>
-                    <h6 class="font-weight-bolder mb-0">Create Product</h6>
+                    <h6 class="font-weight-bolder mb-0">Create Purchase</h6>
                 </nav>
                 <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
                     <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -579,32 +579,20 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <form>
-                                <h5 class="font-weight-bolder mb-0">Form Product</h5>
+                                <h5 class="font-weight-bolder mb-0">Form Purchase</h5>
                                 <p class="mb-0 text-sm">Please fill all of the column</p>
                                 <div class="">
                                     <div class="row mt-3">
                                         <div class="col-12 col-sm-6">
-                                            <label>Product</label>
+                                            <label>Category</label>
                                             <select class="form-control" name="category" id="" onfocus="focused(this)"
                                                 onfocusout="defocused(this)">
                                                 <option value="">-- Choose Category --</option>
-                                                <option value="pool">Pool</option>
-                                                <option value="beverage">Beverage</option>
-                                                <option value="food">Food</option>
+                                                <option value="ingredients">Ingredients</option>
+                                                <option value="opertaional">Opertaional</option>
+                                                <option value="other">Other</option>
                                             </select>
                                             <div class="invalid-feedback fs-12"></div>
-                                        </div>
-                                        <div class="col-12 col-sm-6">
-                                            <label>Image</label>
-                                            <input class=" form-control" type="file" name="image" value="">
-                                        </div>
-
-                                    </div>
-                                    <div class="row mt-3">
-                                        <div class="col-12 col-sm-6">
-                                            <label>Name</label>
-                                            <input class="form-control" type="file" name="name"
-                                                placeholder="ex: Ice tea" value="">
                                         </div>
                                     </div>
                                     <div class="row mt-3">
@@ -616,25 +604,18 @@
                                     </div>
                                     <div class="row mt-3">
                                         <div class="col-12 col-sm-6">
-                                            <label>Price</label>
-                                            <input class=" form-control" type="text" name="price"
-                                                placeholder="ex: Rp. 15.000" value="">
-                                        </div>
-                                    </div>
-                                    <div class="row mt-3">
-                                        <div class="col-12 col-sm-6">
-                                            <label>Product description</label>
-                                            <textarea class="form-control is-invalid" name="description" id="" cols="20"
-                                                rows="5" onfocus="focused(this)"
+                                            <label>Note</label>
+                                            <textarea class="form-control" name="description" id="" cols="20" rows="5"
+                                                onfocus="focused(this)"
                                                 placeholder="ex: A drink from china where the leaf is so juicy"></textarea>
                                             <div class="invalid-feedback fs-12"></div>
                                         </div>
                                     </div>
                                     <div class="row mt-3">
-                                        <div class="col-12 col-sm-12">
+                                        <div class="col-12 col-sm-6">
                                             <div class="button-row d-flex mt-4">
                                                 <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next"
-                                                    type="button" title="Save" id="">create product</button>
+                                                    type="button" title="Save" id="">create purchase</button>
                                             </div>
                                         </div>
                                     </div>

@@ -185,7 +185,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="../pages/rtl.html">
+                    <a class="nav-link  " href="../pages/rtl.html">
                         <div
                             class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                             <svg class="text-dark" width="16px" height="16px" viewBox="0 0 40 40" version="1.1"
@@ -221,7 +221,7 @@
                     <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Purchases</h6>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  " href="../pages/rtl.html">
+                    <a class="nav-link active" href="../pages/rtl.html">
                         <div
                             class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                             <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1"
@@ -455,9 +455,9 @@
                     <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
                         <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a>
                         </li>
-                        <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Products</li>
+                        <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Purchase</li>
                     </ol>
-                    <h6 class="font-weight-bolder mb-0">Create Product</h6>
+                    <h6 class="font-weight-bolder mb-0">Purchase</h6>
                 </nav>
                 <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
                     <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -573,73 +573,69 @@
             </div>
         </nav>
         <!-- End Navbar -->
-        <div class="container-fluid">
+        <div class="container-fluid py-4 h-100">
             <div class="row">
-                <div class="col">
+                <div class="col-12">
                     <div class="card mb-4">
-                        <div class="card-body">
-                            <form>
-                                <h5 class="font-weight-bolder mb-0">Form Product</h5>
-                                <p class="mb-0 text-sm">Please fill all of the column</p>
-                                <div class="">
-                                    <div class="row mt-3">
-                                        <div class="col-12 col-sm-6">
-                                            <label>Product</label>
-                                            <select class="form-control" name="category" id="" onfocus="focused(this)"
-                                                onfocusout="defocused(this)">
-                                                <option value="">-- Choose Category --</option>
-                                                <option value="pool">Pool</option>
-                                                <option value="beverage">Beverage</option>
-                                                <option value="food">Food</option>
-                                            </select>
-                                            <div class="invalid-feedback fs-12"></div>
-                                        </div>
-                                        <div class="col-12 col-sm-6">
-                                            <label>Image</label>
-                                            <input class=" form-control" type="file" name="image" value="">
-                                        </div>
+                        <div class="card-header pb-0 p-3">
+                            <div class="row">
+                                <h6 class="mb-0">Purchase table</h6>
+                            </div>
+                        </div>
+                        <div class="card-body px-0 pt-0 pb-2">
+                            <div class="table-responsive">
+                                <table class="table align-items-center mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th
+                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                Date</th>
+                                            <th
+                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                                Category</th>
+                                            <th
+                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                Note</th>
+                                            <th
+                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                                Cost</th>
+                                            <th
+                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                                User</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex px-2 py-1">
+                                                    <span class="text-secondary font-weight-bold text-xs">12/02/2024
+                                                        15:55</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="text-secondary font-weight-bold text-xs">Ingredients</span>
+                                            </td>
+                                            <td>
+                                                <span class="text-secondary font-weight-bold text-xs">Syrup Denali 2
+                                                    pcs</span>
+                                            </td>
+                                            <td>
+                                                <span class="text-secondary font-weight-bold text-xs">Rp. 15.000</span>
+                                            </td>
+                                            <td>
+                                                <span class="text-secondary font-weight-bold text-xs">Tsubasa</span>
+                                            </td>
 
-                                    </div>
-                                    <div class="row mt-3">
-                                        <div class="col-12 col-sm-6">
-                                            <label>Name</label>
-                                            <input class="form-control" type="file" name="name"
-                                                placeholder="ex: Ice tea" value="">
-                                        </div>
-                                    </div>
-                                    <div class="row mt-3">
-                                        <div class="col-12 col-sm-6">
-                                            <label>Cost</label>
-                                            <input class=" form-control" type="text" name="cost"
-                                                placeholder="ex: Rp. 2.000" value="">
-                                        </div>
-                                    </div>
-                                    <div class="row mt-3">
-                                        <div class="col-12 col-sm-6">
-                                            <label>Price</label>
-                                            <input class=" form-control" type="text" name="price"
-                                                placeholder="ex: Rp. 15.000" value="">
-                                        </div>
-                                    </div>
-                                    <div class="row mt-3">
-                                        <div class="col-12 col-sm-6">
-                                            <label>Product description</label>
-                                            <textarea class="form-control is-invalid" name="description" id="" cols="20"
-                                                rows="5" onfocus="focused(this)"
-                                                placeholder="ex: A drink from china where the leaf is so juicy"></textarea>
-                                            <div class="invalid-feedback fs-12"></div>
-                                        </div>
-                                    </div>
-                                    <div class="row mt-3">
-                                        <div class="col-12 col-sm-12">
-                                            <div class="button-row d-flex mt-4">
-                                                <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next"
-                                                    type="button" title="Save" id="">create product</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
+                                            <td class="align-middle">
+                                                <button class="btn btn-link text-secondary font-weight-bold mb-0">
+                                                    <i class="fa fa-ellipsis-v text-xs" aria-hidden="true"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
